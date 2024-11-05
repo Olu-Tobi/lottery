@@ -86,7 +86,7 @@ contract RaffleTest is Test {
 
         //Act
 
-        (bool upKeepNeeded, ) = raffle.checkUpkeep("");
+        (bool upKeepNeeded,) = raffle.checkUpkeep("");
 
         //Assert
         assert(!upKeepNeeded);
@@ -100,9 +100,11 @@ contract RaffleTest is Test {
         raffle.performUpkeep("");
 
         //Acc
-        (bool upKeepNeeded, ) = raffle.checkUpkeep("");
+        (bool upKeepNeeded,) = raffle.checkUpkeep("");
 
         //Assert
         assert(!upKeepNeeded);
+
+        // you need to add some more errors
     }
 }
